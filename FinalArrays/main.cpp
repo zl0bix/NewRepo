@@ -7,6 +7,8 @@
     int main() {
 	setlocale(LC_ALL, "rus");
 	int n,m,sum;
+	std::cout << "Hello world\n\n";
+
 	//Задача 1 Сортировка половины массива
 	
 	
