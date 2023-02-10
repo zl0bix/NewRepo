@@ -6,7 +6,7 @@
 
     int main() {
 	setlocale(LC_ALL, "rus");
-	int n,m,sum;
+	int n=0,m,sum;
 	std::cout << "Hello world\n\n";
 
 	//Задача 1 Сортировка половины массива
@@ -83,7 +83,7 @@
 
 
 	//Ex3 Вхождение в диапазон
-
+	/*
 	std::cout << "Ex3\nВведите начало диапазона -> ";
 	std::cin >> n;
 	std::cout << "Введите конец диапазона -> ";
@@ -101,8 +101,25 @@
 		else
 			std::cout << i + 1 << ". "  << arr3[i] << "\n";
 	}
+	*/
+	std::cout << "Ex1 Изначальный массив\n\n";
+	const int size1 = 20;
+	int arr1[size1];
+	srand(time(NULL));
 
-	
+	for (int i = 0; i < size1; i++) {
+		arr1[i] = rand() % 22;
+		std::cout << arr1[i] << ' ';
+
+	}
+	std::cout << std::endl;
+	for (int i = 0; i < size1-1; i++)
+
+		if (arr1[i] < arr1[i + 1]) {
+			
+			std::cout << arr1[i + 1] << ' ';
+		}
+
 	std::cout << std::endl;
 	return 0;
 }
